@@ -1,0 +1,32 @@
+# Node dependencies (seront installés dans l'image via package.json)
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-lock.yaml
+
+# Next.js build output
+.next
+out
+
+# Logs
+logs
+*.log
+
+# OS / IDE files
+.DS_Store
+.vscode
+.idea
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Test coverage / cache
+coverage
+*.tsbuildinfo
+
+# Docker files
+Dockerfile
+.dockerignore

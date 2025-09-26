@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pymysql
+python-dotenv
+passlib[bcrypt]
+python-jose[cryptography]
+redis
+pydantic[email]
+pydantic>=2
+pydantic-settings>=2.2
+
+
+
+

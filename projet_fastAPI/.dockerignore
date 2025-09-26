@@ -1,0 +1,28 @@
+# Dossiers et fichiers Python à ignorer
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Environnements virtuels (Windows/Linux)
+.venv/
+env/
+venv/
+
+# Git & IDE
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Tests et caches
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Fichiers sensibles
+.env
+*.secret
