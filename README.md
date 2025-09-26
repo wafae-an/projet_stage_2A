@@ -59,7 +59,7 @@ FRONTEND (Next.js)  --->  BACKEND (FastAPI)  --->  DATABASE (MySQL PGAP)
 ### 1) Cloner
 ```bash
 git clone https://github.com/wafae-an/projet_stage.git
-cd dashboard-pgap
+cd projet_stage
 ```
 
 ### 2) Backend (FastAPI)
