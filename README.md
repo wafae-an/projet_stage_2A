@@ -58,13 +58,13 @@ FRONTEND (Next.js)  --->  BACKEND (FastAPI)  --->  DATABASE (MySQL PGAP)
 
 ### 1) Cloner
 ```bash
-git clone https://github.com/votre-repo/dashboard-pgap.git
+git clone https://github.com/wafae-an/projet_stage.git
 cd dashboard-pgap
 ```
 
 ### 2) Backend (FastAPI)
 ```bash
-cd backend
+cd projet_fastAPI
 python -m venv .venv
 # Linux/Mac
 source .venv/bin/activate
@@ -72,24 +72,14 @@ source .venv/bin/activate
 .venv\Scripts\activate
 
 pip install -r requirements.txt
-# Variables .env requises (exemple)
-# DATABASE_URL=mysql+pymysql://user:pass@localhost:3306/pgap
-# REDIS_URL=redis://localhost:6379/0
-# JWT_SECRET=change-me
-# SMTP_HOST=...
-# SMTP_USER=...
-# SMTP_PASS=...
-
 uvicorn main:app --reload --port 8000
 ```
 📌 API : http://localhost:8000 — Docs : http://localhost:8000/docs
 
 ### 3) Frontend (Next.js)
 ```bash
-cd ../frontend
+cd projet_next_js
 npm install --legacy-peer-deps
-# Variables .env.local (exemple)
-# NEXT_PUBLIC_API_URL=http://localhost:8000
 npm run dev
 ```
 📌 UI : http://localhost:3000
@@ -117,7 +107,7 @@ backend/
 │   ├── api/            # Routes FastAPI
 │   ├── models/         # SQLAlchemy
 │   ├── schemas/        # Pydantic
-│   └── services/       # Logique métier & accès PGAP
+│   └── services/       # Logique métier
 ├── main.py
 ├── database.py
 ├── security.py         # JWT, 2FA/OTP
@@ -131,7 +121,7 @@ backend/
 frontend/
 ├── app/                # Pages / routes Next.js
 ├── actions/            # Appels vers l’API (fetch)
-├── components/         # UI (shadcn/ui)
+├── components/         # UI 
 ├── lib/                # Utils
 ├── public/
 ├── styles/
